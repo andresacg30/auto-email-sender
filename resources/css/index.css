@@ -45,20 +45,34 @@ header h1 {
 h1 {
     text-align: center;
     font-size: 40px;
-    color: blue;
+    color: rgb(5, 5, 172);
     padding: 20px;
     text-align: center;
 }
 
-h2 {
+#intro h2 {
     color: white;
 
 }
 
-h3 {
+h2 {
     color: rgb(5, 5, 172);
 }
 
 #intro p {
     color: white;
 }
+
+.btn {
+    background-color: rgb(228, 0, 0);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: rgb(145, 6, 6);
+  }

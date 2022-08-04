@@ -2,9 +2,12 @@
 <html>
 <head>
     <title>
-        This works!
+        SNS - Email Sender
     </title>
+    
     <link rel="stylesheet" type="text/css" href="./resources/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
 <body>
     <header>
@@ -17,14 +20,17 @@
     <section id="intro">
         <h2><strong>Template para envíos</strong></h2>
         <p>Descarga este archivo, luego editalo con la información de los estudiantes, subelo en el botón siguiente y confirmas el envío </p>
-        <button id="button">Download file</button>
+        <a href="./assets/docs/emails-template.xlsx" download>
+            <button class="btn" style="width:100%"><i class="fa fa-download"></i>Download</button>
+        </a>
     </section>
     <section id="upload">
-        <h3>Upload file</h3>
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            <input type="file" name="file" id="file">
-            <input type="submit" value="Upload">
-        </form>
+        <h2>Upload file</h2>
+        <form enctype = "multipart/form-data" action = "upload_script.py" method = "post">
+            <br> Escoge tu archivo: <input type = "file" name = "filename" />
+            <p> <input type = "submit" value = "Mandar correos!" /> </p>
+            </div>
+          </form>
     </section>
 </body>
 </html>
