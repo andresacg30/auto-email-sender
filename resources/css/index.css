@@ -1,0 +1,64 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+
+}
+header {
+    background-color: blue;
+    padding-left: 30px;
+    padding-top: 20px
+}
+header img {
+    max-width: 70px;
+    max-height: 70px;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+}
+
+header h1 {
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+}
+
+#intro {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+
+#greeting {
+    background-color: ;
+    height: max-content;
+}
+
+#upload {
+    background-color: white;
+    height: max-content;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: blue;
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+
+}
+
+h3 {
+    color: blue;
+}
+
+#intro p {
+    color: white;
+}
