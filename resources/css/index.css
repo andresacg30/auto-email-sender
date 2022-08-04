@@ -3,7 +3,7 @@
 
 }
 header {
-    background-color: blue;
+    background-color: rgb(5, 5, 172);
     padding-left: 30px;
     padding-top: 20px
 }
@@ -27,7 +27,7 @@ header h1 {
 }
 
 #intro {
-    background-color: blue;
+    background-color: rgb(5, 5, 172);
     padding: 20px;
     text-align: center;
 }
@@ -47,6 +47,7 @@ h1 {
     font-size: 40px;
     color: blue;
     padding: 20px;
+    text-align: center;
 }
 
 h2 {
@@ -55,7 +56,7 @@ h2 {
 }
 
 h3 {
-    color: blue;
+    color: rgb(5, 5, 172);
 }
 
 #intro p {
