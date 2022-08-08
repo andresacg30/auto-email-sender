@@ -24,9 +24,33 @@
         </a>
     </section>
     <section id="upload">
+        <h2>Selecciona tus archivos</h2>
+        <p>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul class=flashes>
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% enfdor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+        </p>
+        <form method="post" action="/" enctype="multipart/form-data">
+            <dl>
+                <p>
+                    <input type="file" name="file" autocomplete="off" required>
+                </p>
+            </dl>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+
+    </section>
+    <section id="sendemails">
         <h2>Pulsa el boton para empezar a mandar correos.</h2>
         <button class="btn" style="width:100%" type="button" onclick="window.location.href='{{ url_for( 'send') }}';">Enviar!</button>
-
     </section>
 </body>
 </html>
