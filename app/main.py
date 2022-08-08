@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from script.emails import send_email
+from app.script.emails import send_email
 
 app = Flask(__name__)
 
