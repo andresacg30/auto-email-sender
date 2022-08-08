@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 
 
 def send_email():
-    folder = os.fsdecode("app/script/Enviar")
+    folder = os.fsdecode("./app/script/Enviar")
     emails = pd.read_csv("https://docs.google.com/spreadsheets/d/1CTUndDn98VYB6DbSI7wKAM6QFPkHQydBKPQBTvPIcqA/export?format=csv&gid=0")
 
     for file in os.listdir(folder):
