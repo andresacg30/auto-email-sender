@@ -1,0 +1,5 @@
+#requeriments.txt
+
+gunicorn
+flask
+pandas
