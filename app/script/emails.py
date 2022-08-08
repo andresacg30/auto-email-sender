@@ -41,7 +41,7 @@ def send_email():
         # Creation of MIMEText part
         textpart = MIMEText(f"""Representante de {student}, 
         Este es un correo automatizado, en caso de algún reclamo, por favor contactase directamente con las oficinas.""")
-        filename = f"{os.getcwd()}/script/Enviar/{os.path.basename(file)}"
+        filename = f"{folder}/{os.path.basename(file)}"
         filepart = MIMEApplication(open(filename, "rb").read(), Name=filename)
         filepart['Content-Disposition'] = 'attatchment; filename="%s.pdf' % student
 
