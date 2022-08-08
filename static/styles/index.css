@@ -36,6 +36,13 @@ header h1 {
     height: max-content;
 }
 
+#goback {
+    background-color: rgb(5, 5, 172);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
 #upload {
     background-color: white;
     height: max-content;

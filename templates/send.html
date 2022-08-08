@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        SNS - Email Sender
+    </title>
+    <link href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet">
+</head>
+<body>
+    <section id="greeting">
+        <h1>Los emails fueron enviados!</h1>
+    </section>
+    <section id="goback">
+        <h3>Revisa la consola para ver un detalle de los posibles errores, o la carpeta "Enviar" para saber cuales archivos fallaron al enviar.</h3>
+        <button class="btn" style="width:100%" type="button" onclick="window.location.href='{{ url_for( 'index') }}';">Go Back</button>
+    </body>

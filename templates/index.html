@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        SNS - Email Sender
+    </title>
+    <link href="{{ url_for('static', filename='styles/index.css') }}" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="../static/assets/images/isotipo.png" alt="logo" >
+        <h1>Saint Nicolas School</h1>
+    </header>
+    <section id="greeting">
+        <h1>Envio de correos automático</h1>
+    </section>
+    <section id="intro">
+        <h2><strong>Archivo Excel Con Correos</strong></h2>
+        <p>Usa este link para entrar al archivo con los nombres de estudiantes y los correos de sus representantes. El programa tomará los correos de este excel, y mandará los documentos de la carpeta "Enviar"</p>
+        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1CTUndDn98VYB6DbSI7wKAM6QFPkHQydBKPQBTvPIcqA/edit?usp=sharing">
+            <button class="btn" style="width:100%">Emails</button>
+        </a>
+    </section>
+    <section id="upload">
+        <h2>Pulsa el boton para empezar a mandar correos.</h2>
+        <button class="btn" style="width:100%" type="button" onclick="window.location.href='{{ url_for( 'send') }}';">Enviar!</button>
+
+    </section>
+</body>
+</html>
