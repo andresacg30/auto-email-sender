@@ -8,14 +8,14 @@ from email.mime.text import MIMEText
 
 
 def send_email():
-    folder = os.fsdecode("app/script/Enviar")
-    emails = pd.read_csv("https://docs.google.com/spreadsheets/d/1CTUndDn98VYB6DbSI7wKAM6QFPkHQydBKPQBTvPIcqA/export?format=csv&gid=0")
+    folder = os.fsdecode(#secret)
+    emails = pd.read_csv(#secret)
 
     for file in os.listdir(folder):
         student = os.path.basename(file).replace(".","").split("pdf")[0].lstrip().rstrip()  # First character of series as String, erasing possible whitespaces and removing dot for 1st and 2nd grade files
         # Credentials
-        email_address = "notificaciones@sns.edu.do"
-        email_password = "SNS#391997"
+        email_address = #secret
+        email_password = #secret
         if student != "DS_Store":
             try:
                 recipient_email = (emails["email"][emails["name"] == student]).values[0].lstrip().rstrip()  # Email matched with student name, erasing possible whitespaces
