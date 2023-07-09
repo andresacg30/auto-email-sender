@@ -5,7 +5,7 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
-app.secret_key = "secret key"
+app.secret_key = #secret
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024 
 UPLOAD_FOLDER = os.fsdecode("app/script/Enviar")
 if not os.path.isdir(UPLOAD_FOLDER):
